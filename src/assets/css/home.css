@@ -1,0 +1,37 @@
+.background_container {
+    background-image: url(../images/poster.svg);
+    background-repeat: no-repeat;
+    margin-top: -9rem;
+    padding: 6rem 0rem ;
+    /* width: 20rem; */
+    color: #ffffff;
+}
+.johnwick {
+    width: 22rem;
+    margin: 3rem 5rem;
+}
+.johnwick h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: left;
+    /* color: #ffffff; */
+}
+.johnwick h2 span {
+    margin-left: -2.9rem;
+}
+.johnwick p {
+    text-align: left;
+}
+.rating_container {
+    display: flex;
+    /* justify-content: space-between; */
+}
+.rating_container div:not(:last-child) {
+    margin-right: 2rem;
+}
+.imdb_rating {
+    display: flex;
+}
+.imdb_rating img {
+    margin-right: 1rem;
+}
