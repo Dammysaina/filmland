@@ -35,3 +35,20 @@
 .imdb_rating img {
     margin-right: 1rem;
 }
+.imdb_rating p {
+    font-size: 0.8rem;
+}
+.background_container button {
+    background-color: #BE123C;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #ffffff;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+.background_container button img {
+    width: 1.3rem;
+    padding-right: 0.5rem;
+    position: relative;
+    top: 0.2rem;
+}

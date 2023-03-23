@@ -5,7 +5,30 @@
     padding: 2rem 0;
 }
 .box {
-
+    width: 35rem;
+    height: 2.5rem;
+    background-color: transparent;
+    display: flex;
+    border-radius: 0.6rem;
+    text-align: center;
+    border: 1.5px solid #ffffff;
+    padding: 0.7rem;
+    margin-left: 7rem;
+}
+.box img {
+    width: 1rem;
+}
+.box > input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-right: 1rem;
+    color: #ffffff;
+}
+.box > input::placeholder {
+    color: #ffffff;
 }
 .menu_container {
     display: flex;
@@ -18,8 +41,8 @@
     font-weight: 600;
 }
 .menu_container img {
-    background-color: #BE123C;
-    border-radius: 50%;
-    width: 5rem;
-    padding: 2rem;
+    /* background-color: #BE123C; */
+    /* border-radius: 50%; */
+    width: 2rem;
+    /* padding: 2rem; */
 }
