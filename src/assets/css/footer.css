@@ -1,0 +1,12 @@
+.footer_container {
+    text-align: center;
+}
+.socials_container img:not(:last-child) {
+    margin-right: 3rem;
+}
+.conditions_container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 28rem;
+    font-weight: 500;
+}

@@ -1,7 +1,8 @@
 import React from "react";
-import Filmland from "../assets/images/Logo.svg";
+import Filmland from "../assets/images/logo.svg";
 import menu from "../assets/images/menu.svg";
-import search from "../assets/images/search.svg"
+import search from "../assets/images/search.svg";
+import "../assets/css/header.css"
 
 const Header = () => {
   return (
