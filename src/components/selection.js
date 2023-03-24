@@ -1,12 +1,22 @@
-import vessel2 from "../assets/images/vessel2.jpeg";
-import vessels5 from "../assets/images/vessels5.jpeg"
+import posterimage from "../assets/images/posterimage.svg"
+import love from "../assets/images/love.svg"
+import imdb from "../assets/images/imdb.svg"
+import tomato from "../assets/images/tomato.svg"
 
 const Selection = [
     {
         id:1,
-        image: vessel2,
-        header: "BERTHING AND MOORING",
-        body: "Consequat Lorem tempor Lorem officia reprehenderit laboris incididunt eiusmod id Lorem nostrud."
+        image: posterimage,
+        text: "TV SERIES",
+        imglove: love,
+        header: "USA, 2016 - Current",
+        body: "Stranger Things",
+        imgimdb: imdb,
+        rating: 86 / 100,
+        imgtomato: tomato,
+        ratings: 97%,
+        genre:"Action, Adventure, Horror"
+        
     },
     {
         id:2,

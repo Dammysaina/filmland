@@ -1,27 +1,27 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
     return (
         <div>
             <div>
                 <img src={props.image} alt="service"></img>
-                <p></p>
-                <img></img>
+                <p>{props.text}</p>
+                <img src={props.imglove} alt="loveimage"></img>
             </div>
             <div className="selection_text">
                 <h1>{props.header}</h1>
                 <p>{props.body}</p>
                 <div>
                     <div>
-                        <img></img>
-                        <p></p>
+                        <img src={props.imgimdb} alt="imdb"></img>
+                        <p>{props.rating}</p>
                     </div>
                     <div>
-                        <img></img>
-                        <p></p>
+                        <img src={props.imgtomato} alt="tomato"></img>
+                        <p>{props.ratings}</p>
                     </div>
                 </div>
-                <p></p>
+                <p>{props.genre}</p>
             </div>
         </div>
     )
