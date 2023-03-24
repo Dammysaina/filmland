@@ -5,7 +5,7 @@ import "../assets/css/feature.css"
 
 const Feature = (props) => {
   const feature = "Featured Movie";
-  const arrival = "New Arrival"
+//   const arrival = "New Arrival"
 
   return (
     <div>

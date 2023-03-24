@@ -4,15 +4,11 @@ import "../assets/css/home.css";
 import play from "../assets/images/play.svg";
 import imdb from "../assets/images/imdb.svg";
 import tomato from "../assets/images/tomato.svg";
-import Feature from "./feature";
-
-
-
+import arrowright from "../assets/images/arrowright.svg";
 
 const Home = () => {
-  
-  
 
+  const feature = "Featured Movie"
   return (
     <div className="home_container">
       <div className="background_container">
@@ -41,8 +37,12 @@ const Home = () => {
         </div>
       </div>
       <div className="movies_container">
-        <div>
-          <Feature/>
+        <div className="feature_container">
+          <h1>{feature}</h1>
+          <div className="more_container">
+            <p>See more</p>
+            <img src={arrowright} alt="arrowright" />
+          </div>
         </div>
       </div>
     </div>
