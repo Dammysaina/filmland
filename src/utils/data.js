@@ -25,6 +25,26 @@ const movieData = [
     ratings: "97%",
     genre: "Action, Adventure, Horror",
   },
+  {
+    id: 3,
+    image: posterimage,
+    text: "TV SERIES",
+    header: "USA, 2016 - Current",
+    body: "Stranger Things",
+    rating: "86.0/100",
+    ratings: "97%",
+    genre: "Action, Adventure, Horror",
+  },
+  {
+    id: 4,
+    image: posterimage,
+    text: "TV SERIES",
+    header: "USA, 2016 - Current",
+    body: "Stranger Things",
+    rating: "86.0/100",
+    ratings: "97%",
+    genre: "Action, Adventure, Horror",
+  },
 ];
 
 const castsData = [
@@ -38,6 +58,16 @@ const castsData = [
     image: posterimage,
     body: "Keaanu Reeves",
   },
+  {
+    id: 3,
+    image: posterimage,
+    body: "Keaanu Reeves",
+  },
+  {
+    id: 4,
+    image: posterimage,
+    body: "Keaanu Reeves",
+  },
 ];
 
 const videoData = [
@@ -48,6 +78,11 @@ const videoData = [
       },
       {
         id: 2,
+        image: movie,
+        body: "Keaanu Reeves",
+      },
+      {
+        id: 3,
         image: movie,
         body: "Keaanu Reeves",
       },
