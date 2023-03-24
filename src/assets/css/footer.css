@@ -1,5 +1,6 @@
 .footer_container {
     text-align: center;
+    margin: 1rem 0;
 }
 .socials_container img:not(:last-child) {
     margin-right: 3rem;

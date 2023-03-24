@@ -7,6 +7,9 @@ import newera from "../assets/images/newera.svg";
 import ryan from "../assets/images/ryan.svg";
 import timothee from "../assets/images/timothee.svg";
 import chloe from "../assets/images/chloe.svg";
+import spiderman from "../assets/images/spiderman.svg";
+import batman from "../assets/images/batman.svg";
+import dunkirk from "../assets/images/dunkirk.svg";
 
 
 
@@ -23,7 +26,7 @@ const movieData = [
   },
   {
     id: 2,
-    image: posterimage,
+    image: spiderman,
     text: "TV SERIES",
     header: "USA, 2016 - Current",
     body: "Stranger Things",
@@ -33,7 +36,7 @@ const movieData = [
   },
   {
     id: 3,
-    image: posterimage,
+    image: batman,
     text: "TV SERIES",
     header: "USA, 2016 - Current",
     body: "Stranger Things",
@@ -43,7 +46,7 @@ const movieData = [
   },
   {
     id: 4,
-    image: posterimage,
+    image: dunkirk,
     text: "TV SERIES",
     header: "USA, 2016 - Current",
     body: "Stranger Things",
