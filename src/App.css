@@ -65,6 +65,10 @@
   padding-left: var(--slide-spacing);
 }
 
+.embla__slide.video__slide {
+  flex: 0 0 466px;
+}
+
 .embla__button {
   -webkit-appearance: none;
   background-color: transparent;

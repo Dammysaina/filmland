@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { NextButton, PrevButton } from "./carouselArrowsDotsButtons";
 
-const Carousel = ({ slides, options }) => {
+const Carousel = ({ slides, options, slideClassName = ""}) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
 
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false)
@@ -36,7 +36,7 @@ const Carousel = ({ slides, options }) => {
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {slides.map(({ component: Component, key }) => (
-            <div className="embla__slide" key={key}>
+            <div className={`embla__slide ${slideClassName}`} key={key}>
               {Component}
             </div>
           ))}

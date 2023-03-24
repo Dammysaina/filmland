@@ -67,6 +67,7 @@ const Home = () => {
           </div>
           <Carousel
             slides={movieSlides}
+            slideClassName="video__slide"
             options={{
               align: "start",
             }}

@@ -47,12 +47,12 @@
 }
 
 .mt-12 {
-  margin-top: 0.75rem 
+  margin-top: 0.75rem;
 }
 
 .selection_text p {
-    font-weight: 700;
-    font-size: 12px;
+  font-weight: 700;
+  font-size: 12px;
   color: #9ca3af;
 }
 .selection_text h1 {
@@ -64,17 +64,42 @@
   justify-content: space-between;
 }
 .rating_container p {
-    color: #111827;
-    font-weight: 400;
-font-size: 12px;
+  color: #111827;
+  font-weight: 400;
+  font-size: 12px;
 }
 .genre {
   color: #9ca3af;
   font-weight: 700;
-font-size: 12px;
+  font-size: 12px;
 }
 .imdb_rating {
   display: flex;
   justify-content: space-between;
 }
 
+.video-wrap {
+  position: relative;
+  border: 1px solid red;
+
+  width: 450px;
+  /* height: 288.12px; */
+}
+.video-poster {
+  height: 253.12px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.video_play {
+  position: absolute;
+  top: 6rem;
+  left: 13rem;
+  text-align: center;
+}
+.selection_body h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
