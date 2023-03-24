@@ -1,6 +1,7 @@
 import React from "react";
-
-import imglove from "../assets/images/love.svg"
+import imdb from "../assets/images/imdb.svg";
+import tomato from "../assets/images/tomato.svg";
+import imglove from "../assets/images/love.svg";
 import "../assets/css/card.css";
 
 const Card = (props) => {
@@ -10,28 +11,34 @@ const Card = (props) => {
         className="poster"
         style={{ backgroundImage: `url(${props.image})` }}
       >
-        <div className="love_container">
-          <p>{props.text}</p>
+        {!props.castOnly && !props.videoOnly && (
+          <div className="love_container">
+            <p>{props.text}</p>
 
-          <button className="btn">
-            <img src={imglove} alt="loveimage"></img>
-          </button>
-        </div>
+            <button className="btn">
+              <img src={imglove} alt="loveimage"></img>
+            </button>
+          </div>
+        )}
       </div>
       <div className="selection_text">
-        <p>{props.header}</p>
-        <h1>{props.body}</h1>
-        <div className="rating_container">
-          <div className="imdb_rating">
-            <img src={props.imgimdb} alt="imdb"></img>
-            <p>{props.rating}</p>
-          </div>
-          <div className="imdb_rating">
-            <img src={props.imgtomato} alt="tomato"></img>
-            <p>{props.ratings}</p>
-          </div>
-        </div>
-        <p className="genre">{props.genre}</p>
+        {!props.castOnly && !props.videoOnly && <p className="mt-12">{props.header}</p>}
+        <h1 className="mt-12">{props.body}</h1>
+        {!props.castOnly && !props.videoOnly && (
+          <>
+            <div className="rating_container mt-12">
+              <div className="imdb_rating">
+                <img src={imdb} alt="imdb"></img>
+                <p>{props.rating}</p>
+              </div>
+              <div className="imdb_rating">
+                <img src={tomato} alt="tomato"></img>
+                <p>{props.ratings}</p>
+              </div>
+            </div>
+            <p className="genre mt-12">{props.genre}</p>
+          </>
+        )}
       </div>
     </div>
   );

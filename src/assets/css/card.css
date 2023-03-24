@@ -46,6 +46,10 @@
   cursor: pointer;
 }
 
+.mt-12 {
+  margin-top: 0.75rem 
+}
+
 .selection_text p {
     font-weight: 700;
     font-size: 12px;

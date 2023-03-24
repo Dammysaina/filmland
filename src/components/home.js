@@ -4,32 +4,10 @@ import "../assets/css/home.css";
 import play from "../assets/images/play.svg";
 import imdb from "../assets/images/imdb.svg";
 import tomato from "../assets/images/tomato.svg";
-import Card from "./card";
-import Selection from "./selection";
 
 import Feature from "./feature";
 import Carousel from "./carousel";
-
-const featuredMoviesSlides = Selection.map((selectionItem) => {
-  return {
-    key: selectionItem.id,
-    component: (
-      <Card
-        className="whatwedo_card"
-        image={selectionItem.image}
-        text={selectionItem.text}
-        imglove={selectionItem.imglove}
-        header={selectionItem.header}
-        body={selectionItem.body}
-        imgimdb={selectionItem.imgimdb}
-        rating={selectionItem.rating}
-        imgtomato={selectionItem.imgtomato}
-        ratings={selectionItem.ratings}
-        genre={selectionItem.genre}
-      />
-    ),
-  };
-});
+import { castSlides, featuredMoviesSlides, movieSlides } from "../utils/data";
 
 const Home = () => {
   return (
@@ -65,105 +43,45 @@ const Home = () => {
             <Feature title="Feature Movies" />
           </div>
 
-          <Carousel slides={featuredMoviesSlides} options={{
-            align: "start"
-          }} />
-
-          <div>
-            {Selection.map((selectionItem) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <Card
-                  className="whatwedo_card"
-                  image={selectionItem.image}
-                  text={selectionItem.text}
-                  imglove={selectionItem.imglove}
-                  header={selectionItem.header}
-                  body={selectionItem.body}
-                  imgimdb={selectionItem.imgimdb}
-                  rating={selectionItem.rating}
-                  imgtomato={selectionItem.imgtomato}
-                  ratings={selectionItem.ratings}
-                  genre={selectionItem.genre}
-                />
-              );
-            })}
-          </div>
+          <Carousel
+            slides={featuredMoviesSlides}
+            options={{
+              align: "start",
+            }}
+          />
         </div>
         <div>
           <div>
             <Feature title="New Arrivals" />
           </div>
-          <div>
-            {Selection.map((selectionItem) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <Card
-                  className="whatwedo_card"
-                  image={selectionItem.image}
-                  text={selectionItem.text}
-                  imglove={selectionItem.imglove}
-                  header={selectionItem.header}
-                  body={selectionItem.body}
-                  imgimdb={selectionItem.imgimdb}
-                  rating={selectionItem.rating}
-                  imgtomato={selectionItem.imgtomato}
-                  ratings={selectionItem.ratings}
-                  genre={selectionItem.genre}
-                />
-              );
-            })}
-          </div>
+          <Carousel
+            slides={featuredMoviesSlides}
+            options={{
+              align: "start",
+            }}
+          />
         </div>
         <div>
           <div>
             <Feature title="Exclusive Videos" />
           </div>
-          <div>
-            {Selection.map((selectionItem) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <Card
-                  className="whatwedo_card"
-                  image={selectionItem.image}
-                  text={selectionItem.text}
-                  imglove={selectionItem.imglove}
-                  header={selectionItem.header}
-                  body={selectionItem.body}
-                  imgimdb={selectionItem.imgimdb}
-                  rating={selectionItem.rating}
-                  imgtomato={selectionItem.imgtomato}
-                  ratings={selectionItem.ratings}
-                  genre={selectionItem.genre}
-                />
-              );
-            })}
-          </div>
+          <Carousel
+            slides={movieSlides}
+            options={{
+              align: "start",
+            }}
+          />
         </div>
         <div>
           <div>
             <Feature title="Featured Casts" />
           </div>
-          <div>
-            {Selection.map((selectionItem) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <Card
-                  className="whatwedo_card"
-                  image={selectionItem.image}
-                  text={selectionItem.text}
-                  imglove={selectionItem.imglove}
-                  header={selectionItem.header}
-                  body={selectionItem.body}
-                  imgimdb={selectionItem.imgimdb}
-                  rating={selectionItem.rating}
-                  imgtomato={selectionItem.imgtomato}
-                  ratings={selectionItem.ratings}
-                  genre={selectionItem.genre}
-                />
-              );
-            })}
-          </div>
+          <Carousel
+            slides={castSlides}
+            options={{
+              align: "start",
+            }}
+          />
         </div>
       </div>
     </div>
