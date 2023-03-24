@@ -1,4 +1,4 @@
-.feature_container {
+/* .feature_container {
     display: flex;
     justify-content: space-between;
 }
@@ -6,6 +6,27 @@
     display: flex;
 }
 .more_container p {
+    padding-right: 1rem;
+    color: #BE123C;
+    font-size: 1.1rem;
+    font-weight: 300;
+    position: relative;
+    bottom: -0.7rem;
+}
+.more_container img {
+    width: 0.8rem;
+    position: relative;
+    bottom: 0.1rem;
+} */
+
+.feature_container {
+    display: flex;
+    justify-content: space-between;
+}
+.more_container {
+    display: flex;
+}
+.more_container a {
     padding-right: 1rem;
     color: #BE123C;
     font-size: 1.1rem;

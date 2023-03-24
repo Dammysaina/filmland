@@ -4,13 +4,12 @@ import "../assets/css/home.css";
 import play from "../assets/images/play.svg";
 import imdb from "../assets/images/imdb.svg";
 import tomato from "../assets/images/tomato.svg";
-import arrowright from "../assets/images/arrowright.svg";
 import Card from "./card";
 import Selection from "./selection";
-import posterimage from  "../assets/images/posterimage.svg"
+
+import Feature from "./feature";
 
 const Home = () => {
-  const feature = "Featured Movie";
   return (
     <div className="home_container">
       <div className="background_container">
@@ -39,36 +38,30 @@ const Home = () => {
         </div>
       </div>
       <div className="movies_container">
-        <div className="feature_container">
-          <h1>{feature}</h1>
-          <div className="more_container">
-            <p>See more</p>
-            <img src={arrowright} alt="arrowright" />
-          </div>
-        </div>
         <div>
+          <Feature title="Feature Movies" />
           <div>
-            {Selection.map((selectionItem) => {
-              return (
-                // eslint-disable-next-line react/jsx-key
-                <Card
-                  className="whatwedo_card"
-                  image={selectionItem.posterimage}
-                  text={selectionItem.text}
-                  imglove={selectionItem.imglove}
-                  header={selectionItem.header}
-                  body={selectionItem.body}
-                  imgimdb={selectionItem.imdb}
-                  rating={selectionItem.rating}
-                  imgtomato={selectionItem.imgtomato}
-                  ratings={selectionItem.ratings}
-                  genre={selectionItem.genre}
-                />
-              );
-            })}
+            <div>
+              {Selection.map((selectionItem) => {
+                return (
+                  // eslint-disable-next-line react/jsx-key
+                  <Card
+                    className="whatwedo_card"
+                    image={selectionItem.image}
+                    text={selectionItem.text}
+                    imglove={selectionItem.imglove}
+                    header={selectionItem.header}
+                    body={selectionItem.body}
+                    imgimdb={selectionItem.imgimdb}
+                    rating={selectionItem.rating}
+                    imgtomato={selectionItem.imgtomato}
+                    ratings={selectionItem.ratings}
+                    genre={selectionItem.genre}
+                  />
+                );
+              })}
+            </div>
           </div>
-
-          <img src={posterimage} alt="service" />
         </div>
       </div>
     </div>

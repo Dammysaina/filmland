@@ -1,9 +1,78 @@
-.love_container {
-    display: flex;
+.poster-wrap {
+  position: relative;
+  border: 1px solid red;
+  width: 250px;
 }
+
+.poster {
+  height: 370px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.love_container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  top: 19px;
+}
+
 .love_container p {
+  color: #111827;
+  background-color: #f3f4f680;
+  border-radius: 1rem;
+  margin: 0;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: #111827;
+  padding: 3px 8px;
+}
+
+.love_container button.btn {
+  background-color: #f3f4f680;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: none;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.selection_text p {
+    font-weight: 700;
+    font-size: 12px;
+  color: #9ca3af;
+}
+.selection_text h1 {
+  font-weight: 700;
+  font-size: 18px;
+}
+.rating_container {
+  display: flex;
+  justify-content: space-between;
+}
+.rating_container p {
     color: #111827;
-    background-color: #F3F4F680;
-    border-radius: 1rem;
-    padding: 1rem;
+    font-weight: 400;
+font-size: 12px;
+}
+.genre {
+  color: #9ca3af;
+  font-weight: 700;
+font-size: 12px;
+}
+.imdb_rating {
+  display: flex;
+  justify-content: space-between;
+}
+.imdb_rating img {
+  /* padding-right: 0.5rem; */
 }

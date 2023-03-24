@@ -1,30 +1,37 @@
 import React from "react";
+
+import imglove from "../assets/images/love.svg"
 import "../assets/css/card.css";
 
 const Card = (props) => {
   return (
-    <div>
-      <div>
-        <img src={props.image} alt="service"></img>
+    <div className="poster-wrap">
+      <div
+        className="poster"
+        style={{ backgroundImage: `url(${props.image})` }}
+      >
         <div className="love_container">
           <p>{props.text}</p>
-          <img src={props.imglove} alt="loveimage"></img>
+
+          <button className="btn">
+            <img src={imglove} alt="loveimage"></img>
+          </button>
         </div>
       </div>
       <div className="selection_text">
-        <h1>{props.header}</h1>
-        <p>{props.body}</p>
+        <p>{props.header}</p>
+        <h1>{props.body}</h1>
         <div className="rating_container">
-          <div>
+          <div className="imdb_rating">
             <img src={props.imgimdb} alt="imdb"></img>
             <p>{props.rating}</p>
           </div>
-          <div>
+          <div className="imdb_rating">
             <img src={props.imgtomato} alt="tomato"></img>
             <p>{props.ratings}</p>
           </div>
         </div>
-        <p>{props.genre}</p>
+        <p className="genre">{props.genre}</p>
       </div>
     </div>
   );
