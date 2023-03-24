@@ -59,11 +59,11 @@
   font-weight: 700;
   font-size: 18px;
 }
-.rating_container {
+.rate_container {
   display: flex;
   justify-content: space-between;
 }
-.rating_container p {
+.rate_container p {
   color: #111827;
   font-weight: 400;
   font-size: 12px;

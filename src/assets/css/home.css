@@ -11,6 +11,9 @@
     width: 22rem;
     margin: 3rem 5rem;
 }
+.johnwick h2, p, div, button{
+    margin-top: 1rem;
+}
 .johnwick h2 {
     font-size: 3rem;
     font-weight: 600;
@@ -30,6 +33,9 @@
 .rating_container div:not(:last-child) {
     margin-right: 2rem;
 }
+.rating_container p {
+    color: #ffffff;
+}
 .imdb_rating {
     display: flex;
 }
@@ -38,6 +44,7 @@
 }
 .imdb_rating p {
     font-size: 0.8rem;
+    color: #ffffff;
 }
 .background_container button {
     background-color: #BE123C;

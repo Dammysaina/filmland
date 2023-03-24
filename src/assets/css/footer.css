@@ -1,6 +1,9 @@
 .footer_container {
     text-align: center;
-    margin: 1rem 0;
+    margin: 5rem 0 2.5rem 0;
+}
+.footer_container div {
+    margin-top: 1.5rem;
 }
 .socials_container img:not(:last-child) {
     margin-right: 3rem;

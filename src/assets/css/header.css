@@ -40,9 +40,13 @@
     color: #ffffff;
     font-weight: 600;
 }
-.menu_container img {
-    /* background-color: #BE123C; */
-    /* border-radius: 50%; */
-    width: 2rem;
-    /* padding: 2rem; */
+.menu_container button.menu_button {
+    background-color: #BE123C;
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    border: none;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
 }

@@ -26,7 +26,7 @@ const Card = (props) => {
         <h1 className="mt-12">{props.body}</h1>
         {!props.castOnly && !props.videoOnly && (
           <>
-            <div className="rating_container mt-12">
+            <div className="rate_container mt-12">
               <div className="imdb_rating">
                 <img src={imdb} alt="imdb"></img>
                 <p>{props.rating}</p>

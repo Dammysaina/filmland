@@ -16,7 +16,10 @@ const Header = () => {
       </div>
       <div className="menu_container">
         <p>Hi, $Fullname</p>
+        <button className="menu_button">
         <img src={menu} alt="menu" />
+        </button>
+       
       </div>
     </div>
   );
