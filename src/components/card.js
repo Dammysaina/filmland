@@ -11,7 +11,7 @@ const Card = (props) => {
         className="poster"
         style={{ backgroundImage: `url(${props.image})` }}
       >
-        {!props.castOnly && !props.videoOnly && (
+        {!props.castOnly &&  (
           <div className="love_container">
             <p>{props.text}</p>
 
@@ -22,7 +22,7 @@ const Card = (props) => {
         )}
       </div>
       <div className="selection_text">
-        {!props.castOnly && !props.videoOnly && <p className="mt-12">{props.header}</p>}
+        {!props.castOnly &&  <p className="mt-12">{props.header}</p>}
         <h1 className="mt-12">{props.body}</h1>
         {!props.castOnly && !props.videoOnly && (
           <>

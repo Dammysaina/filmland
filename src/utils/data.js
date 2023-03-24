@@ -1,6 +1,8 @@
 import posterimage from "../assets/images/posterimage.svg";
 import Card from "../components/card";
+import Videocard from "../components/videoscard";
 import movie from "../assets/images/videodata.svg"
+
 
 const movieData = [
   {
@@ -90,9 +92,9 @@ const movieSlides = videoData.map((selectionItem) => {
     return {
       key: selectionItem.id,
       component: (
-        <Card
+        <Videocard
           videoOnly
-          className="whatwedo_card"
+          className="video_card"
           image={selectionItem.image}
           body={selectionItem.body}
         />
