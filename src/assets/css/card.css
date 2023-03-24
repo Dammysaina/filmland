@@ -1,0 +1,9 @@
+.love_container {
+    display: flex;
+}
+.love_container p {
+    color: #111827;
+    background-color: #F3F4F680;
+    border-radius: 1rem;
+    padding: 1rem;
+}

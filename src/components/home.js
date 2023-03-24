@@ -5,10 +5,12 @@ import play from "../assets/images/play.svg";
 import imdb from "../assets/images/imdb.svg";
 import tomato from "../assets/images/tomato.svg";
 import arrowright from "../assets/images/arrowright.svg";
+import Card from "./card";
+import Selection from "./selection";
+import posterimage from  "../assets/images/posterimage.svg"
 
 const Home = () => {
-
-  const feature = "Featured Movie"
+  const feature = "Featured Movie";
   return (
     <div className="home_container">
       <div className="background_container">
@@ -43,6 +45,30 @@ const Home = () => {
             <p>See more</p>
             <img src={arrowright} alt="arrowright" />
           </div>
+        </div>
+        <div>
+          <div>
+            {Selection.map((selectionItem) => {
+              return (
+                // eslint-disable-next-line react/jsx-key
+                <Card
+                  className="whatwedo_card"
+                  image={selectionItem.posterimage}
+                  text={selectionItem.text}
+                  imglove={selectionItem.imglove}
+                  header={selectionItem.header}
+                  body={selectionItem.body}
+                  imgimdb={selectionItem.imdb}
+                  rating={selectionItem.rating}
+                  imgtomato={selectionItem.imgtomato}
+                  ratings={selectionItem.ratings}
+                  genre={selectionItem.genre}
+                />
+              );
+            })}
+          </div>
+
+          <img src={posterimage} alt="service" />
         </div>
       </div>
     </div>
