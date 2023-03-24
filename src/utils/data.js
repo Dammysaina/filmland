@@ -1,7 +1,13 @@
 import posterimage from "../assets/images/posterimage.svg";
 import Card from "../components/card";
 import Videocard from "../components/videoscard";
-import movie from "../assets/images/videodata.svg"
+import movie from "../assets/images/videodata.svg";
+import squad from "../assets/images/squad.svg";
+import newera from "../assets/images/newera.svg";
+import ryan from "../assets/images/ryan.svg";
+import timothee from "../assets/images/timothee.svg";
+import chloe from "../assets/images/chloe.svg";
+
 
 
 const movieData = [
@@ -55,18 +61,18 @@ const castsData = [
   },
   {
     id: 2,
-    image: posterimage,
-    body: "Keaanu Reeves",
+    image: ryan,
+    body: "Ryan Reynolds",
   },
   {
     id: 3,
-    image: posterimage,
-    body: "Keaanu Reeves",
+    image: timothee,
+    body: "Timothée Chalamet",
   },
   {
     id: 4,
-    image: posterimage,
-    body: "Keaanu Reeves",
+    image: chloe,
+    body: "Chloë Grace Moretz",
   },
 ];
 
@@ -78,13 +84,13 @@ const videoData = [
       },
       {
         id: 2,
-        image: movie,
-        body: "Keaanu Reeves",
+        image: squad,
+        body: "The Suicide Squad : John Cena Interview",
       },
       {
         id: 3,
-        image: movie,
-        body: "Keaanu Reeves",
+        image: newera,
+        body: "Will there be a new era of horror movie?",
       },
       
 ]
