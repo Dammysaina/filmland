@@ -54,12 +54,18 @@ const Header = () => {
             <img src={play} alt="play" /> WATCH TRAILER
           </button>
         </div>
-        <div>
+        <div className="menu_number">
           <div>
             <img src={menunumber} alt="menunumber" />
           </div>
           <div>
-
+            <ul>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+            </ul>
           </div>
         </div>
       </div>

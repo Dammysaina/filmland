@@ -59,16 +59,20 @@
   cursor: pointer;
 }
 .background_container {
+
   background-image: url(../images/poster.svg);
   background-repeat: no-repeat;
   margin-top: -9rem;
   padding: 6rem 0rem;
   /* width: 20rem; */
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 5rem 5rem 5rem;
 }
 .johnwick {
   width: 22rem;
-  margin: 3rem 5rem;
+  /* margin: 3rem 5rem; */
 }
 .johnwick .mt-10 {
   margin-top: 1rem;
@@ -91,9 +95,6 @@
 }
 .rating_container div:not(:last-child) {
   margin-right: 2rem;
-}
-.rating_container p {
-  color: #ffffff;
 }
 .imdb_rating {
   display: flex;
@@ -118,4 +119,8 @@
   padding-right: 0.5rem;
   position: relative;
   top: 0.2rem;
+}
+.menu_number {
+    display: flex;
+    justify-content: space-between;
 }
