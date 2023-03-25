@@ -59,12 +59,10 @@
   cursor: pointer;
 }
 .background_container {
-
   background-image: url(../images/poster.svg);
   background-repeat: no-repeat;
   margin-top: -9rem;
   padding: 6rem 0rem;
-  /* width: 20rem; */
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -72,7 +70,6 @@
 }
 .johnwick {
   width: 22rem;
-  /* margin: 3rem 5rem; */
 }
 .johnwick .mt-10 {
   margin-top: 1rem;
@@ -81,7 +78,6 @@
   font-size: 3rem;
   font-weight: 600;
   text-align: left;
-  /* color: #ffffff; */
 }
 .johnwick h2 span {
   margin-left: -2.9rem;
@@ -120,7 +116,24 @@
   position: relative;
   top: 0.2rem;
 }
+.menunumber_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 5rem;
+  margin-right: -2rem;
+}
 .menu_number {
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  top: 1.7rem;
+  padding-right: 0.5rem;
+}
+.number_menu ul {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+.mt-2 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #9ca3af;
 }

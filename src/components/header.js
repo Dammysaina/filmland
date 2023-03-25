@@ -54,17 +54,17 @@ const Header = () => {
             <img src={play} alt="play" /> WATCH TRAILER
           </button>
         </div>
-        <div className="menu_number">
-          <div>
+        <div className="menunumber_container">
+          <div className="menu_number">
             <img src={menunumber} alt="menunumber" />
           </div>
-          <div>
+          <div className="number_menu">
             <ul>
-              <li>1</li>
-              <li>2</li>
+              <li className="mt-2">1</li>
+              <li className="mt-2">2</li>
               <li>3</li>
-              <li>4</li>
-              <li>5</li>
+              <li className="mt-2">4</li>
+              <li className="mt-2">5</li>
             </ul>
           </div>
         </div>
