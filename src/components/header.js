@@ -6,6 +6,7 @@ import "../assets/css/header.css";
 import play from "../assets/images/play.svg";
 import imdb from "../assets/images/imdb.svg";
 import tomato from "../assets/images/tomato.svg";
+import menunumber from "../assets/images/numbermenu.svg"
 
 const Header = () => {
   return (
@@ -52,6 +53,14 @@ const Header = () => {
           <button className="mt-10">
             <img src={play} alt="play" /> WATCH TRAILER
           </button>
+        </div>
+        <div>
+          <div>
+            <img src={menunumber} alt="menunumber" />
+          </div>
+          <div>
+
+          </div>
         </div>
       </div>
     </div>
