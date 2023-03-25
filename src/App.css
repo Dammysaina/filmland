@@ -59,7 +59,7 @@
   margin-left: calc(var(--slide-spacing) * -1);
 }
 .embla__slide {
-  flex: 0 0 270px;
+  flex: 0 0 290px;
   min-width: 0;
   position: relative;
   padding-left: var(--slide-spacing);

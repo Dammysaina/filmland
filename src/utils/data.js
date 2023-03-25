@@ -10,6 +10,7 @@ import chloe from "../assets/images/chloe.svg";
 import spiderman from "../assets/images/spiderman.svg";
 import batman from "../assets/images/batman.svg";
 import dunkirk from "../assets/images/dunkirk.svg";
+import reeves from "../assets/images/reeves.svg"
 
 
 
@@ -59,7 +60,7 @@ const movieData = [
 const castsData = [
   {
     id: 1,
-    image: posterimage,
+    image: reeves,
     body: "Keaanu Reeves",
   },
   {
