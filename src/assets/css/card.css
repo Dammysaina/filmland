@@ -80,10 +80,7 @@
 
 .video-wrap {
   position: relative;
-  border: 1px solid red;
-
   width: 450px;
-  /* height: 288.12px; */
 }
 .video-poster {
   height: 253.12px;
