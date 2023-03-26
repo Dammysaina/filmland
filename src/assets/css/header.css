@@ -59,7 +59,7 @@
   cursor: pointer;
 }
 .background_container {
-  background-image: url(../images/poster.svg);
+  background-image: url(../../assets/images/Poster.svg);
   background-repeat: no-repeat;
   margin-top: -9rem;
   padding: 6rem 0rem;

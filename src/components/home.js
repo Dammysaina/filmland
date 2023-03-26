@@ -1,5 +1,4 @@
 import React from "react";
-// import poster from "../assets/images/poster.svg";
 import "../assets/css/home.css";
 
 
