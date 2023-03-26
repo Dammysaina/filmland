@@ -18,7 +18,7 @@ const movieData = [
   {
     id: 1,
     image: posterimage,
-    text: "TV SERIES",
+    text: "TV SERiES",
     header: "USA, 2016 - Current",
     body: "Stranger Things",
     rating: "86.0/100",

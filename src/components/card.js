@@ -13,7 +13,7 @@ const Card = (props) => {
       >
         {!props.castOnly &&  (
           <div className="love_container">
-            <p>{props.text}</p>
+            {!props.seriesOnly && <p>{props.text}</p>}
 
             <button className="btn">
               <img src={imglove} alt="loveimage"></img>
