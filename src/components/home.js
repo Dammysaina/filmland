@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import "../assets/css/home.css";
-import axios from "axios";
+// import axios from "axios";
 
 
 import Feature from "./feature";
@@ -23,13 +23,24 @@ const Home = () => {
   //   console.log(movies);
   //   setPopular(movies.results);
   // };
-  const [videos, setVideos] = useState([])
-  useEffect (() => {
-    axios.get('https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=a6f57293bb50c13014e1dbc2eecc1544&language=en-US').then((response)=>{
-      console.log(response)
-    })
+  const url= "https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=a6f57293bb50c13014e1dbc2eecc1544&language=en-US";
+  useEffect(() => {
+    fetchVideos();
+  }, []);
 
-  },[])
+  const [videos, setVideos] = useState([])
+  const fetchVideos = async () => {
+    const data = await fetch(url);
+    const videos = await data.json();
+    console.log(videos);
+    setVideos(videos.results);
+  }
+  // useEffect (() => {
+  //   axios.get('https://api.themoviedb.org/3/movie/{movie_id}/videos?api_key=a6f57293bb50c13014e1dbc2eecc1544&language=en-US').then((response)=>{
+  //     console.log(response)
+  //   })
+
+  // },[])
 
   return (
     <div className="home_container">
@@ -63,13 +74,13 @@ const Home = () => {
           <div>
             <Feature title="Exclusive Videos" />
           </div>
-           { videos.map((video,index) => {
+           { videos?.map((video) => {
             return <Carousel
             slides={movieSlides}
             slideClassName="video__slide"
             options={{
               align: "start",
-            }} key={index} {...video}
+            }}  key={video.id} video={video}
           />
           })
 
