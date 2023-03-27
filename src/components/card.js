@@ -4,7 +4,7 @@ import tomato from "../assets/images/tomato.svg";
 import imglove from "../assets/images/love.svg";
 import "../assets/css/card.css";
 
-const Card = (props) => {
+const Card = (props, movie) => {
   return (
     <div className="poster-wrap">
       <div
@@ -23,7 +23,7 @@ const Card = (props) => {
       </div>
       <div className="selection_text">
         {!props.castOnly &&  <p className="mt-12">{props.header}</p>}
-        <h1 className="mt-12">{props.body}</h1>
+        <h1 className="mt-12">{movie.body}</h1>
         {!props.castOnly && !props.videoOnly && (
           <>
             <div className="rate_container mt-12">
